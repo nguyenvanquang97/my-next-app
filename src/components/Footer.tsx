@@ -93,7 +93,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full bg-white shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] flex items-center justify-center hover:bg-[#080809] transition-colors group"
               >
                 <Image
-                  src="/assets/icons/facebook-icon.svg"
+                  src="/assets/svg/facebook-icon.svg"
                   alt="Facebook"
                   width={7}
                   height={13}
@@ -105,7 +105,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full bg-white shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] flex items-center justify-center hover:bg-[#080809] transition-colors group"
               >
                 <Image
-                  src="/assets/icons/instagram-icon.svg"
+                  src="/assets/svg/instagram-icon.svg"
                   alt="Instagram"
                   width={16}
                   height={16}
@@ -117,7 +117,7 @@ export default function Footer() {
                 className="w-10 h-10 rounded-full bg-white shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] flex items-center justify-center hover:bg-[#080809] transition-colors group"
               >
                 <Image
-                  src="/assets/icons/twitter-icon.svg"
+                  src="/assets/svg/twitter-icon.svg"
                   alt="Twitter"
                   width={20}
                   height={20}

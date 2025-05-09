@@ -1,0 +1,27 @@
+{
+  "common": {
+    "destinations": "Destinations",
+    "hotels": "Hotels",
+    "flights": "Flights",
+    "bookings": "Bookings",
+    "login": "Login",
+    "signup": "Sign up",
+    "welcome": "Welcome, {name}",
+    "logout": "Logout"
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Please sign in to your account",
+      "email": "Email Address",
+      "password": "Password",
+      "remember": "Remember me",
+      "forgot": "Forgot password?",
+      "submit": "Sign In",
+      "loading": "Signing in...",
+      "or": "OR CONTINUE WITH",
+      "noAccount": "Don't have an account?",
+      "signupLink": "Sign up"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "common": {
+    "destinations": "Điểm đến",
+    "hotels": "Khách sạn",
+    "flights": "Chuyến bay",
+    "bookings": "Đặt chỗ",
+    "login": "Đăng nhập",
+    "signup": "Đăng ký",
+    "welcome": "Xin chào, {name}",
+    "logout": "Đăng xuất"
+  },
+  "auth": {
+    "login": {
+      "title": "Chào mừng trở lại",
+      "subtitle": "Vui lòng đăng nhập vào tài khoản của bạn",
+      "email": "Địa chỉ email",
+      "password": "Mật khẩu",
+      "remember": "Ghi nhớ đăng nhập",
+      "forgot": "Quên mật khẩu?",
+      "submit": "Đăng nhập",
+      "loading": "Đang đăng nhập...",
+      "or": "HOẶC TIẾP TỤC VỚI",
+      "noAccount": "Chưa có tài khoản?",
+      "signupLink": "Đăng ký"
+    }
+  }
+}

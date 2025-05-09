@@ -2,7 +2,8 @@ import Image from "next/image";
 
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
+
 
 export const destinations = [
   {
@@ -26,6 +27,7 @@ export const destinations = [
 ];
 
 export default function Home() {
+
   return (
     <>
       <main className="min-h-screen bg-white">
@@ -84,7 +86,7 @@ export default function Home() {
               <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 mx-auto mb-4 bg-[#F0BB1F] rounded-lg flex items-center justify-center">
                   <Image
-                    src="/window.svg"
+                    src="/assets/svg/window.svg"
                     alt="Destination"
                     width={32}
                     height={32}
@@ -100,7 +102,7 @@ export default function Home() {
               {/* Service Card 2 */}
               <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 mx-auto mb-4 bg-[#F15A2B] rounded-lg flex items-center justify-center">
-                  <Image src="/file.svg" alt="Payment" width={32} height={32} />
+                  <Image src="/assets/svg/file.svg" alt="Payment" width={32} height={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Make Payment</h3>
                 <p className="text-gray-600">
@@ -110,7 +112,7 @@ export default function Home() {
               {/* Service Card 3 */}
               <div className="bg-white p-6 rounded-2xl shadow-lg text-center hover:shadow-xl transition-shadow">
                 <div className="w-16 h-16 mx-auto mb-4 bg-[#006380] rounded-lg flex items-center justify-center">
-                  <Image src="/file.svg" alt="Airport" width={32} height={32} />
+                  <Image src="/assets/svg/file.svg" alt="Airport" width={32} height={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
                   Reach Airport on Selected Date
