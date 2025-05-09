@@ -28,7 +28,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         style={{
-          paddingTop: "var(--header-height)",
           backgroundColor: "var(--background-color)",
         }}
         className={`${geistSans.variable} ${geistMono.variable} antialiased `}

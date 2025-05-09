@@ -28,7 +28,6 @@ export const destinations = [
 export default function Home() {
   return (
     <>
-    
       <main className="min-h-screen bg-white">
         <div
           style={{
@@ -36,11 +35,12 @@ export default function Home() {
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            minHeight: "600px",
+            minHeight: "1000px",
             width: "100%",
 
             marginTop: "calc(-1*var(--header-height))",
-            paddingTop: 80,
+            display: "flex",
+            alignItems: "center",
           }}
         >
           {/* Hero Section */}
@@ -206,7 +206,7 @@ export default function Home() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-6 py-3 rounded-lg w-full md:w-auto"
+                className="px-6 py-3 rounded-lg w-full md:w-auto bg-white shadow-md"
               />
               <button className="bg-[#FF946D] text-white px-6 py-3 rounded-lg hover:bg-[#ff8555] transition-colors">
                 Subscribe
@@ -215,7 +215,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-     
     </>
   );
 }

@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -9,7 +9,12 @@ export default function Footer() {
           {/* Logo and Description */}
           <div className="col-span-2">
             <Link href="/" className="inline-block mb-6">
-              <Image src="/logo.svg" alt="Jadoo" width={115} height={34} />
+              <Image
+                src="/assets/svg/logo.svg"
+                alt="Jadoo"
+                width={115}
+                height={34}
+              />
             </Link>
             <p className="text-[#5E6282] mb-4">
               Book your trip in minute, get full Control for much longer.
@@ -21,17 +26,26 @@ export default function Footer() {
             <h3 className="font-bold text-[#181E4B] mb-4">Company</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-[#5E6282] hover:text-[#DF6951] transition-colors">
+                <Link
+                  href="/about"
+                  className="text-[#5E6282] hover:text-[#DF6951] transition-colors"
+                >
                   About
                 </Link>
               </li>
               <li>
-                <Link href="/careers" className="text-[#5E6282] hover:text-[#DF6951] transition-colors">
+                <Link
+                  href="/careers"
+                  className="text-[#5E6282] hover:text-[#DF6951] transition-colors"
+                >
                   Careers
                 </Link>
               </li>
               <li>
-                <Link href="/mobile" className="text-[#5E6282] hover:text-[#DF6951] transition-colors">
+                <Link
+                  href="/mobile"
+                  className="text-[#5E6282] hover:text-[#DF6951] transition-colors"
+                >
                   Mobile
                 </Link>
               </li>
@@ -43,17 +57,26 @@ export default function Footer() {
             <h3 className="font-bold text-[#181E4B] mb-4">Contact</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/help" className="text-[#5E6282] hover:text-[#DF6951] transition-colors">
+                <Link
+                  href="/help"
+                  className="text-[#5E6282] hover:text-[#DF6951] transition-colors"
+                >
                   Help/FAQ
                 </Link>
               </li>
               <li>
-                <Link href="/press" className="text-[#5E6282] hover:text-[#DF6951] transition-colors">
+                <Link
+                  href="/press"
+                  className="text-[#5E6282] hover:text-[#DF6951] transition-colors"
+                >
                   Press
                 </Link>
               </li>
               <li>
-                <Link href="/affiliates" className="text-[#5E6282] hover:text-[#DF6951] transition-colors">
+                <Link
+                  href="/affiliates"
+                  className="text-[#5E6282] hover:text-[#DF6951] transition-colors"
+                >
                   Affiliates
                 </Link>
               </li>
@@ -63,15 +86,43 @@ export default function Footer() {
           {/* Social Media */}
           <div>
             <h3 className="font-bold text-[#181E4B] mb-4">Social</h3>
-            <div className="flex space-x-4">
-              <Link href="https://facebook.com" className="hover:opacity-80 transition-opacity">
-                <Image src="/facebook.svg" alt="Facebook" width={32} height={32} className="hover:opacity-80" />
+            {/* Social Icons */}
+            <div className="flex items-center space-x-4">
+              <Link
+                href="https://www.facebook.com"
+                className="w-10 h-10 rounded-full bg-white shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] flex items-center justify-center hover:bg-[#080809] transition-colors group"
+              >
+                <Image
+                  src="/assets/icons/facebook-icon.svg"
+                  alt="Facebook"
+                  width={7}
+                  height={13}
+                  className="group-hover:brightness-0 group-hover:invert transition-all"
+                />
               </Link>
-              <Link href="https://instagram.com" className="hover:opacity-80 transition-opacity">
-                <Image src="/instagram.svg" alt="Instagram" width={32} height={32} className="hover:opacity-80" />
+              <Link
+                href="https://www.instagram.com"
+                className="w-10 h-10 rounded-full bg-white shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] flex items-center justify-center hover:bg-[#080809] transition-colors group"
+              >
+                <Image
+                  src="/assets/icons/instagram-icon.svg"
+                  alt="Instagram"
+                  width={16}
+                  height={16}
+                  className="group-hover:brightness-0 group-hover:invert transition-all"
+                />
               </Link>
-              <Link href="https://twitter.com" className="hover:opacity-80 transition-opacity">
-                <Image src="/twitter.svg" alt="Twitter" width={32} height={32} className="hover:opacity-80" />
+              <Link
+                href="https://www.twitter.com"
+                className="w-10 h-10 rounded-full bg-white shadow-[0px_2px_10px_0px_rgba(0,0,0,0.1)] flex items-center justify-center hover:bg-[#080809] transition-colors group"
+              >
+                <Image
+                  src="/assets/icons/twitter-icon.svg"
+                  alt="Twitter"
+                  width={20}
+                  height={20}
+                  className="group-hover:brightness-0 group-hover:invert transition-all"
+                />
               </Link>
             </div>
           </div>
