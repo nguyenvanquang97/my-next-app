@@ -28,6 +28,7 @@ export const destinations = [
 export default function Home() {
   return (
     <>
+    
       <main className="min-h-screen bg-white">
         <div
           style={{
@@ -214,7 +215,7 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
+     
     </>
   );
 }
