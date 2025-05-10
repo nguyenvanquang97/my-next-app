@@ -23,5 +23,47 @@
       "noAccount": "Chưa có tài khoản?",
       "signupLink": "Đăng ký"
     }
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Những điểm đến tuyệt vời nhất trên thế giới",
+      "title": "Du lịch, tận hưởng và sống một cuộc sống mới tuyệt vời",
+      "description": "Xây dựng Wicket lâu hơn ngưỡng mộ làm barton phù phiếm tự nó làm trong nó. Ưu tiên cho vận động viên nó say mê lắng nghe. Cổng công viên bán họ phía tây khó khăn cho.",
+      "cta": "Tìm hiểu thêm"
+    },
+    "services": {
+      "title": "Chúng tôi cung cấp dịch vụ tốt nhất",
+      "subtitle": "DANH MỤC",
+      "items": {
+        "destination": {
+          "title": "Chọn điểm đến",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "payment": {
+          "title": "Thanh toán",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "airport": {
+          "title": "Đến sân bay vào ngày đã chọn",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      }
+    },
+    "destinations": {
+      "subtitle": "Bán chạy nhất",
+      "title": "Điểm đến hàng đầu"
+    },
+    "testimonials": {
+      "subtitle": "Đánh giá",
+      "title": "Mọi người nói gì về chúng tôi",
+      "quote": "Trên Windows nói về đồng cỏ sơn yet các bữa tiệc express của nó sử dụng. Chắc chắn cuối cùng khi anh ấy cũng biết tiếp theo. Của tin tưởng hoặc chuyển hướng không.",
+      "author": "Mike Taylor",
+      "location": "Lahore, Pakistan"
+    },
+    "subscribe": {
+      "title": "Đăng ký để nhận thông tin, tin tức mới nhất và các ưu đãi thú vị khác về Jadoo",
+      "placeholder": "Email của bạn",
+      "cta": "Đăng ký"
+    }
   }
 }

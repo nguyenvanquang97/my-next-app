@@ -23,5 +23,47 @@
       "noAccount": "Don't have an account?",
       "signupLink": "Sign up"
     }
+  },
+  "home": {
+    "hero": {
+      "subtitle": "Best Destinations around the world",
+      "title": "Travel, enjoy and live a new and full life",
+      "description": "Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
+      "cta": "Find out more"
+    },
+    "services": {
+      "title": "We Offer Best Services",
+      "subtitle": "CATEGORY",
+      "items": {
+        "destination": {
+          "title": "Choose Destination",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "payment": {
+          "title": "Make Payment",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "airport": {
+          "title": "Reach Airport on Selected Date",
+          "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        }
+      }
+    },
+    "destinations": {
+      "subtitle": "Top Selling",
+      "title": "Top Destinations"
+    },
+    "testimonials": {
+      "subtitle": "Testimonials",
+      "title": "What people say about Us.",
+      "quote": "On the Windows talking painted pasture yet its express parties use. Sure last upon he same as knew next. Of believed or diverted no.",
+      "author": "Mike Taylor",
+      "location": "Lahore, Pakistan"
+    },
+    "subscribe": {
+      "title": "Subscribe to get information, latest news and other interesting offers about Jadoo",
+      "placeholder": "Your email",
+      "cta": "Subscribe"
+    }
   }
 }

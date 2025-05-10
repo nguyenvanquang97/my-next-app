@@ -1,3 +1,4 @@
+'use client'
 import Image from "next/image";
 
 import Header from "@/components/Header";
@@ -26,7 +27,10 @@ export const destinations = [
   },
 ];
 
+import { useTranslations } from 'next-intl';
+
 export default function Home() {
+  const t = useTranslations('home');
 
   return (
     <>
@@ -53,18 +57,16 @@ export default function Home() {
             <div className="flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="flex-1">
                 <p className="text-[20px] text-[#DF6951] font-bold mb-8 uppercase">
-                  Best Destinations around the world
+                  {t('hero.subtitle')}
                 </p>
                 <h1 className="text-5xl font-bold text-[#181E4B] mb-8">
-                  Travel, enjoy and live a new and full life
+                  {t('hero.title')}
                 </h1>
                 <p className="text-lg text-gray-600 mb-8">
-                  Built Wicket longer admire do barton vanity itself do in it.
-                  Preferred to sportsmen it engrossed listening. Park gate sell
-                  they west hard for the.
+                  {t('hero.description')}
                 </p>
                 <button className="bg-[#F1A501] text-white px-6 py-3 rounded-lg hover:bg-[#d89401] transition-colors">
-                  Find out more
+                  {t('hero.cta')}
                 </button>
               </div>
               <div className="flex-1 relative"></div>
@@ -77,9 +79,9 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-[#14183E] mb-4">
-                We Offer Best Services
+                {t('services.title')}
               </h2>
-              <p className="text-gray-600">CATEGORY</p>
+              <p className="text-gray-600">{t('services.subtitle')}</p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Service Card 1 */}
@@ -93,10 +95,10 @@ export default function Home() {
                   />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
-                  Choose Destination
+                  {t('services.items.destination.title')}
                 </h3>
                 <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  {t('services.items.destination.description')}
                 </p>
               </div>
               {/* Service Card 2 */}
@@ -104,9 +106,9 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto mb-4 bg-[#F15A2B] rounded-lg flex items-center justify-center">
                   <Image src="/assets/svg/file.svg" alt="Payment" width={32} height={32} />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">Make Payment</h3>
+                <h3 className="text-xl font-semibold mb-3">{t('services.items.payment.title')}</h3>
                 <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  {t('services.items.payment.description')}
                 </p>
               </div>
               {/* Service Card 3 */}
@@ -115,10 +117,10 @@ export default function Home() {
                   <Image src="/assets/svg/file.svg" alt="Airport" width={32} height={32} />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">
-                  Reach Airport on Selected Date
+                  {t('services.items.airport.title')}
                 </h3>
                 <p className="text-gray-600">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  {t('services.items.airport.description')}
                 </p>
               </div>
             </div>
@@ -128,9 +130,9 @@ export default function Home() {
         {/* Destinations Section */}
         <section className="container  mx-auto px-4 py-16">
           <div className="text-center mb-12">
-            <p className="text-[#5E6282] mb-2">Top Selling</p>
+            <p className="text-[#5E6282] mb-2">{t('destinations.subtitle')}</p>
             <h2 className="text-4xl font-bold text-[#14183E]">
-              Top Destinations
+              {t('destinations.title')}
             </h2>
           </div>
 
@@ -171,23 +173,21 @@ export default function Home() {
         <section className="bg-gray-50 py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-12">
-              <p className="text-[#5E6282] mb-2">Testimonials</p>
+              <p className="text-[#5E6282] mb-2">{t('testimonials.subtitle')}</p>
               <h2 className="text-4xl font-bold text-[#14183E]">
-                What people say about Us.
+                {t('testimonials.title')}
               </h2>
             </div>
             <div className="max-w-xl mx-auto">
               <div className="bg-white p-6 rounded-2xl shadow-lg">
                 <p className="text-gray-600 mb-4">
-                  "On the Windows talking painted pasture yet its express
-                  parties use. Sure last upon he same as knew next. Of believed
-                  or diverted no."
+                  {t('testimonials.quote')}
                 </p>
                 <div className="flex items-center">
                   <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
                   <div>
-                    <h4 className="font-semibold">Mike Taylor</h4>
-                    <p className="text-gray-600">Lahore, Pakistan</p>
+                    <h4 className="font-semibold">{t('testimonials.author')}</h4>
+                    <p className="text-gray-600">{t('testimonials.location')}</p>
                   </div>
                 </div>
               </div>
@@ -200,18 +200,17 @@ export default function Home() {
           <div className="max-w-4xl mx-auto bg-[#DFD7F9] rounded-2xl p-8 relative overflow-hidden">
             <div className="text-center mb-8">
               <h2 className="text-2xl font-bold text-[#14183E] mb-4">
-                Subscribe to get information, latest news and other interesting
-                offers about Jadoo
+                {t('subscribe.title')}
               </h2>
             </div>
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
               <input
                 type="email"
-                placeholder="Your email"
+                placeholder={t('subscribe.placeholder')}
                 className="px-6 py-3 rounded-lg w-full md:w-auto bg-white shadow-md"
               />
               <button className="bg-[#FF946D] text-white px-6 py-3 rounded-lg hover:bg-[#ff8555] transition-colors">
-                Subscribe
+                {t('subscribe.cta')}
               </button>
             </div>
           </div>

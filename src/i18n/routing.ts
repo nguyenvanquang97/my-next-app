@@ -8,5 +8,5 @@ export const routing = defineRouting({
   defaultLocale: 'vi',
 
   // Lưu trữ ngôn ngữ đã chọn trong cookie
-  localePrefix: 'as-needed'
+  // localePrefix: 'as-needed'
 });
