@@ -45,7 +45,7 @@ export default function Header() {
 
   return (
     <header className="absolute top-0 left-0 right-0 py-4 shadow-sm p-4 ">
-      <div className=" w-full px-4 ">
+      <div className=" w-full px-6 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">

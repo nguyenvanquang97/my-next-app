@@ -1,8 +1,11 @@
-import { destinations } from "@/app/(home)/page";
+import { destinations } from "@/data/destinations";
+
+
+
 
 
 export default function DestinationDetailPage({ params }: { params: { id: string } }) {
-  const destination = destinations[Number(params.id)];
+  const destination = destinations.find((dest) => dest.id === parseInt(params.id)) as any;
 
   return (
     <main className="min-h-screen bg-white">

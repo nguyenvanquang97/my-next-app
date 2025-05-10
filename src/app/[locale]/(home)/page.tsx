@@ -5,33 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "@/i18n/navigation";
 
-export const destinations = [
-  {
-    id: 1,
-    name: "Rome",
-    location: "Italy",
-    image: "https://images.unsplash.com/photo-1552832230-c0197dd311b5?q=80&w=1000&auto=format&fit=crop",
-    rating: 4.8
-  },
-  {
-    id: 2,
-    name: "London",
-    location: "United Kingdom",
-    image: "https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?q=80&w=1000&auto=format&fit=crop",
-    rating: 4.7
-  },
-  {
-    id: 3,
-    name: "Paris",
-    location: "France",
-    image: "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?q=80&w=1000&auto=format&fit=crop",
-    rating: 4.9
-  }
-];
+
 
 import { useTranslations } from "next-intl";
 import { MapPin } from "lucide-react";
 import { useState } from "react";
+import { destinations } from "@/data/destinations";
 
 export default function Home() {
   const t = useTranslations("home");
@@ -228,8 +207,8 @@ function TopDestinations() {
           {destinations.map((destination) => (
             <Link
               key={destination.id}
-              href={`/destinations/${destination.id}`}
-              className="group block overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:shadow-xl"
+              href={`/destination/${destination.id}`}
+              className="relative group block overflow-hidden rounded-xl shadow-md transition-all duration-300 hover:shadow-xl"
             >
               <div className="relative h-64 w-full overflow-hidden">
                 <Image
@@ -243,17 +222,17 @@ function TopDestinations() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-70"></div>
               </div>
-              <div className="relative -mt-16 px-4 pb-4">
-                <div className="rounded-lg bg-white p-4 shadow-lg transition-transform duration-300 group-hover:scale-105">
+              <div className="absolute left-0 bottom-0 w-full px-4 pb-4  z-10">
+                <div className="rounded-lg  p-4  transition-transform duration-300 group-hover:scale-105">
                   <div className="flex items-center justify-between">
-                    <h3 className="text-xl font-semibold text-gray-900">
+                    <h3 className="text-xl font-semibold text-white-900">
                       {destination.name}
                     </h3>
                     <span className="inline-flex items-center rounded-full bg-yellow-100 px-2.5 py-0.5 text-xs font-medium text-yellow-800">
                       {destination.rating}
                     </span>
                   </div>
-                  <div className="mt-2 flex items-center text-sm text-gray-500">
+                  <div className="mt-2 flex items-center text-sm text-white-500">
                     <MapPin className="mr-1 h-4 w-4" />
                     {destination.location}
                   </div>
