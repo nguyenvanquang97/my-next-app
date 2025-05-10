@@ -44,8 +44,8 @@ export default function Header() {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 py-4 shadow-sm p-4">
-      <div className="container mx-auto px-4">
+    <header className="absolute top-0 left-0 right-0 py-4 shadow-sm p-4 ">
+      <div className=" w-full px-4 ">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
@@ -86,7 +86,7 @@ export default function Header() {
           </nav>
 
           {/* Auth Buttons */}
-          <div className="flex items-center space-x-4">
+          <div  className="flex items-center space-x-4 ">
             {userName ? (
               <div style={{}}>
                 <span
@@ -118,9 +118,10 @@ export default function Header() {
                     {t('signup')}
                   </button>
                 </LanguageLink>
-                <LanguageSwitcher />
+               
               </div>
             )}
+             <LanguageSwitcher />
           </div>
     
         </div>
